@@ -1,0 +1,137 @@
+/* Generic css */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+/* helping classes */
+.w-100{
+    width:100%
+}
+/* specific css */
+.main_div{
+    width:100%;
+    height: 100vh;
+}
+.main_div{
+    background-image: url("https://media.istockphoto.com/photos/paper-texture-background-in-light-cream-tone-picture-id1085611376");
+}
+img{
+    height: 100%;
+    width: 100%;
+    z-index:3;
+    transition-duration: 3s;
+    transform-origin: left;
+    /* opacity: 0; */
+}
+#div_1{
+    width:50%;
+    height: 70%;
+    border:30px solid red;
+    position: absolute;
+    top:10%;
+    left:43%;
+    perspective: 7000px;
+    z-index: 3;
+    border-image: url("https://www.pngkey.com/png/detail/120-1209854_digital-old-book-design-frame-downloads-frame-design.png");
+    border-image-slice: 18%;
+    border-image-repeat: round;  
+}
+
+#div_2{
+    width: 50%;
+    height: 67%;
+    position: absolute;
+    top: 19%;
+    left: 44%;
+    z-index: 2;
+    margin-left: 14px;
+    text-align: justify;
+}
+input[type="radio"]{
+    display:inline-block;
+}
+.main_div label{
+    color:black;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+}
+input[value="open"]:checked ~ div img{
+    transform: rotateY(-180deg);   
+}
+input[value="open"]:checked ~ #div_1{
+    z-index: 1;
+    transition-duration: 6s;
+}
+
+input[value="close"]:checked ~ div img{
+    transform: rotateY(0deg);
+}
+
+h1{
+    color:whitesmoke;
+    display: inline-block;
+    margin-top: 30px;
+}
+/* inner div_2 css */
+.row{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-areas: "col_1 col_2"
+                          "col_3 col_4";
+    justify-content: space-evenly;
+}
+.col{
+    border:1px solid black;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    border-radius: 25%;
+    text-align: center;
+    background-color: #282E37;
+    transition-duration: 1s;
+}
+.col_1{
+    grid-area: col_1;
+    height: 80%;
+}
+.col_2{
+    grid-area: col_2; 
+    height: 80%;
+}
+.col_3{
+    grid-area: col_3; 
+    height: 80%; 
+}
+.col_4{
+    grid-area: col_4;
+    height: 80%; 
+}
+#div_2 .col:hover{
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#div_2 span{
+    display: inline-block;
+    width:100%;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url("https://thumbs.gfycat.com/GranularTepidIndri-max-1mb.gif");
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+#div_2 a{
+    display: block;
+    height: inherit;
+}

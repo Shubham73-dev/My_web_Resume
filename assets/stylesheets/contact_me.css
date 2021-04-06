@@ -1,0 +1,40 @@
+#banner{
+    background-image: url('https://static-cse.canva.com/blob/136925/Create-an-awesome-design-portfolio-with-these-20-pro-tips.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+    border:10px solid darkslateblue;
+    /* position: relative; */
+}
+.btn{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width:8%;
+}
+.container{
+    margin-bottom: 20px;
+}
+.container p i{
+    font-size: 35px;
+}
+.w3-light-grey{
+    margin-bottom: 27px;
+}
+.section_3{
+    background-image: url('https://static-cse.canva.com/blob/136925/Create-an-awesome-design-portfolio-with-these-20-pro-tips.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+    border:10px solid darkslateblue;
+}
+.feedback{
+    width:100%;
+    height: 500px;
+    border: 1px solid red;
+    background-color: floralwhite;
+}
